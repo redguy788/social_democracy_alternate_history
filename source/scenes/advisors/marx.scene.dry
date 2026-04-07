@@ -1,0 +1,19 @@
+title: Wilhelm Marx
+is-card: true
+card-image: img/advisors/Marx.jpg
+view-if: player_party == "z"
+tags: advisor
+
+# Profile
+Wilhelm Marx is a former Chancellor and the steady hand of the Zentrum. He is a master of compromise and can keep even the most difficult coalitions together.
+
+- @stabilize: Stabilize the coalition.
+- @appeal: Appeal to the middle class.
+
+@stabilize
+on-arrival: coalition_stability += 10; ddp_relation += 5; spd_relation += 5;
+Marx's experience ensures that our partners stay at the table.
+
+@appeal
+on-arrival: z_popularity += 1.5; dvp_relation += 5;
+His moderate image appeals to those who fear both radicals and reactionaries.

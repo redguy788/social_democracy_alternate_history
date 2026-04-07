@@ -1,0 +1,19 @@
+title: Joseph Wirth
+is-card: true
+card-image: img/advisors/Wirth.jpg
+view-if: player_party == "z"
+tags: advisor
+
+# Profile
+As the leader of the Zentrum's left wing, Wirth believes the party's future lies in a strong alliance with the working class and the SPD.
+
+- @republican_unity: "The enemy is on the right!"
+- @labor_ties: Connect with Christian Trade Unions.
+
+@republican_unity
+on-arrival: spd_relation += 15; democratization += 1; pro_republic += 5;
+Wirth strengthens our bond with the republic's defenders.
+
+@labor_ties
+on-arrival: catholic_loyalty += 10; workers_z_support += 5;
+The Catholic workers feel represented by our party's policies.

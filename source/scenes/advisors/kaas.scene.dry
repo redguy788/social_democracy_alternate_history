@@ -1,0 +1,19 @@
+title: Ludwig Kaas
+is-card: true
+card-image: img/advisors/Kaas.jpg
+view-if: player_party == "z"
+tags: advisor
+
+# Profile
+A priest and a scholar. Kaas is the bridge between the party and the Vatican. He seeks to protect religious education and Church rights.
+
+- @concordat: Negotiate with the Holy See.
+- @religious_values: Promote traditional education.
+
+@concordat
+on-arrival: catholic_loyalty += 15; z_popularity += 2;
+The Vatican is pleased with our defense of the faith.
+
+@religious_values
+on-arrival: z_popularity += 1; dnvp_relation += 5; spd_relation -= 5;
+Traditionalists support our stance on education, though the secular left is wary.

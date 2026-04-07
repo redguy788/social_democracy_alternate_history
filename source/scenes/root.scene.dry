@@ -19,6 +19,10 @@ go-to: start_menu_2
 @start
 on-arrival: {!
 Q.started = 1;
+Q.player_party = "z";
+Q.z_name = "Zentrum";
+Q.z_color = "#000000";
+Q.z_popularity = 15.2;
 // time elapsed (in months)
 Q.time = 1;
 Q.year = 1928;

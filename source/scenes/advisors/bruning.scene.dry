@@ -1,0 +1,19 @@
+title: Heinrich Brüning
+is-card: true
+card-image: img/advisors/Bruning.jpg
+view-if: player_party == "z"
+tags: advisor
+
+# Profile
+Brüning is a financial expert from the right wing of the Zentrum. He is known for his discipline and his focus on fiscal responsibility.
+
+- @budget_cuts: Implement strict budget balance.
+- @presidential_support: Build ties with Hindenburg.
+
+@budget_cuts
+on-arrival: budget += 1; inflation -= 2; workers_z_support -= 5;
+"We must stabilize the Mark at any cost." The budget improves, but at a social price.
+
+@presidential_support
+on-arrival: hindenburg_relation += 10;
+You have gained the favor of the President's inner circle.

@@ -5,15 +5,15 @@ view-if: player_party == "z"
 tags: advisor
 
 # Profile
-Brüning is a financial expert from the right wing of the Zentrum. He is known for his discipline and his focus on fiscal responsibility.
+A financial expert and war veteran. Brüning believes in fiscal discipline and strengthening the executive power to save the nation.
 
-- @budget_cuts: Implement strict budget balance.
-- @presidential_support: Build ties with Hindenburg.
+- @austerity: Balance the budget.
+- @order: Strengthen the state.
 
-@budget_cuts
+@austerity
 on-arrival: budget += 1; inflation -= 2; workers_z_support -= 5;
-"We must stabilize the Mark at any cost." The budget improves, but at a social price.
+"We must sacrifice now to be stable later." The budget is balanced, but the people suffer.
 
-@presidential_support
-on-arrival: hindenburg_relation += 10;
-You have gained the favor of the President's inner circle.
+@order
+on-arrival: hindenburg_relation += 10; dnvp_relation += 5;
+His disciplined approach earns respect from the conservatives.
